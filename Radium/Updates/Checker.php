@@ -193,8 +193,6 @@ class Radium_Updates_Checker {
 			$options
 		);
 		
-		var_export($result);
-		
 		//Try to parse the response
 		$pluginInfo = null;
 		if ( !is_wp_error($result) && isset($result['response']['code']) && ($result['response']['code'] == 200) && !empty($result['body']) ){
